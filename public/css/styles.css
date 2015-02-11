@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css);
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -35,5 +36,76 @@ table {
   height: 0;
   clear: both; }
 
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  background: #4AB5BA; }
+
+body {
+  height: 100%;
+  max-width: 900px;
+  margin: auto;
+  background: #ECF8E7; }
+
+.nav {
+  display: none; }
+
 h1 {
-  background-color: #f50404; }
+  padding: .4375rem 0;
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4AB5BA;
+  text-align: center;
+  text-transform: uppercase;
+  background: #2F8F97; }
+
+.content {
+  padding: 2.5rem; }
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #101D2E; }
+
+h3 {
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  color: #2F8F97; }
+
+article a {
+  color: #101D2E;
+  text-decoration: none;
+  border-bottom: 1px dashed #4AB5BA; }
+article:visited {
+  color: #101D2E; }
+article p {
+  line-height: 1.7rem; }
+
+aside {
+  display: none; }
+
+footer {
+  padding-top: 1.25rem;
+  border-top: 1px solid #4AB5BA; }
+
+footer .left {
+  display: none; }
+
+.footer_links {
+  width: 240px;
+  margin: auto; }
+  .footer_links li {
+    float: left;
+    width: 25%;
+    text-align: center; }
+  .footer_links a {
+    color: #101D2E;
+    text-decoration: none; }
+    .footer_links a:visited {
+      color: #101D2E; }
+
