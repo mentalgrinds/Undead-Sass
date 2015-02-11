@@ -47,7 +47,7 @@ html {
 
 body {
   height: 100%;
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
   background: #ECF8E7; }
 
@@ -81,8 +81,6 @@ article a {
   color: #101D2E;
   text-decoration: none;
   border-bottom: 1px dashed #4AB5BA; }
-article:visited {
-  color: #101D2E; }
 article p {
   line-height: 1.7rem; }
 
@@ -106,6 +104,47 @@ footer .left {
   .footer_links a {
     color: #101D2E;
     text-decoration: none; }
-    .footer_links a:visited {
-      color: #101D2E; }
+
+@media only screen and (min-width: 641px) {
+  .row .nav {
+    display: block;
+    width: 300px;
+    margin: 0 auto 15px;
+    padding: 15px 0 16px; }
+    .row .nav li {
+      float: left;
+      width: 25%;
+      text-align: center; }
+    .row .nav a {
+      color: #101D2E;
+      text-decoration: none; }
+  h1 {
+    padding: 2.125rem 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: #4AB5BA;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #2F8F97;
+    border-bottom: 1px solid #2F8F97;
+    background: #ECF8E7; }
+  aside {
+    display: block;
+    padding: 2.5rem; }
+    aside h4 {
+      color: #2F8F97;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-bottom: 1.0625rem; }
+    aside .read_more {
+      width: 100%;
+      display: block;
+      padding: 1.25rem 0;
+      margin-top: 45px;
+      text-align: center;
+      background: #2F8F97;
+      text-decoration: none;
+      color: #4AB5BA;
+      font-weight: bold; } }
 

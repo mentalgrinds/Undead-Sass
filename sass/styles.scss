@@ -17,14 +17,13 @@ html {
 
 body {
   height: 100%;
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
   background: $theme_content_bg;
 }
 
 .nav {
   display: none;
-
 }
 
 h1 {
@@ -54,17 +53,17 @@ h3 {
   color: $theme_accent_darker;
 }
 
+@mixin base-anchor {
+  color: $theme_font_dark;
+  text-decoration: none;
+}
+
 article {
 
   a {
-    color: $theme_font_dark;
-    text-decoration: none;
+    @include base-anchor;
     border-bottom: 1px dashed $theme_accent;
 
-  }
-
-  &:visited {
-    color: $theme_font_dark;
   }
 
   p {
@@ -98,12 +97,7 @@ footer .left {
   }
 
   a {
-    color: $theme_font_dark;
-    text-decoration: none;
-    
-    &:visited {
-      color: $theme_font_dark;
-    }
+    @include base-anchor;
   }
 
 }
@@ -116,7 +110,61 @@ footer .left {
 
 
 @media #{$medium_up} {
- 
+  .row .nav {
+    display: block;
+    width: 300px;
+    margin: 0 auto 15px;
+    padding: 15px 0 16px;
+
+    
+    li {
+      float: left;
+      width: 25%;
+      text-align: center;
+    }
+
+    a {
+      @include base-anchor;
+    }
+  }
+
+  h1 {
+    padding: 2.125rem 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: $theme_accent;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid $theme_accent_darker;
+    border-bottom: 1px solid $theme_accent_darker;
+    background: $theme_content_bg;
+
+  }
+
+  aside {
+    display: block;
+    padding: 2.5rem;
+
+    h4 {
+      color: $theme_accent_darker;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-bottom: 1.0625rem;  
+    }
+   
+    .read_more {
+      width: 100%;
+      display: block;
+      padding: 1.25rem 0;
+      margin-top: 45px;
+      text-align: center;
+      background: $theme_accent_darker;
+      text-decoration: none;
+      color: $theme_accent;
+      font-weight: bold;
+    }
+  }
 }
 
 @media #{$large_up} {
