@@ -43,10 +43,9 @@ html {
   height: 100%;
   font-family: 'Droid Serif', serif;
   font-size: 16px;
-  background: #4AB5BA; }
+  background: #ECF8E7; }
 
 body {
-  height: 100%;
   max-width: 960px;
   margin: auto;
   background: #ECF8E7; }
@@ -88,7 +87,7 @@ aside {
   display: none; }
 
 footer {
-  padding-top: 1.25rem;
+  padding: 1.25rem 0;
   border-top: 1px solid #4AB5BA; }
 
 footer .left {
@@ -148,3 +147,30 @@ footer .left {
       color: #4AB5BA;
       font-weight: bold; } }
 
+@media only screen and (min-width: 961px) {
+  html {
+    background: #4AB5BA; }
+  body {
+    max-width: 900px;
+    margin-top: 3.125rem;
+    height: initial; }
+  .content {
+    float: left;
+    width: 70%;
+    border-right: 1px solid #2F8F97; }
+  aside {
+    float: right;
+    width: 30%; }
+    aside p {
+      line-height: 1.8rem; }
+  footer {
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem; }
+    footer .left {
+      display: block;
+      float: right;
+      padding-right: 2.5rem; }
+  .footer_links {
+    margin-left: 2.5rem; }
+    .footer_links li {
+      text-align: left; } }
